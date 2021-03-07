@@ -3,6 +3,7 @@ import { Route, Switch } from "react-router-dom";
 import "./App.css";
 
 import NavBar from "../../components/NavBar/NavBar";
+import HomePage from "../HomePage/HomePage";
 import CodePage from "../CodePage/CodePage";
 
 function App() {
@@ -10,13 +11,10 @@ function App() {
     <div className="App">
       <NavBar />
       <Switch>
-        <CodePage />
-        <div className="flex-h film">
-          <h1 className="header-large film">Film.</h1>
-        </div>
-        <div className="flex-h chocolate">
-          <h1 className="header-large chocolate">Chocolate.</h1>
-        </div>
+        <Route exact path="/" render={() => <HomePage />} />
+        <Route exact path="/code" render={() => <CodePage />} />
+        <Route exact path="/film" render={() => <HomePage />} />
+        <Route exact path="/chocolate" render={() => <HomePage />} />
       </Switch>
     </div>
   );
