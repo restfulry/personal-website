@@ -7,6 +7,20 @@
   font-size: 21em;
 }
 
+.header-medium {
+  font-size: 12em;
+}
+
+.header-small {
+  font-size: 4em;
+}
+
+.subheading {
+  align-self: center;
+  color: #ededf5;
+  font-weight: bolder;
+}
+
 div.code {
   background-image: linear-gradient(#5621bc, #5210ac, #622cad, #3f0c87);
 }

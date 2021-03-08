@@ -1,0 +1,18 @@
+.nav {
+  background-color: #ededf5;
+}
+
+.NavBar-link {
+  align-items: center;
+  width: 75%;
+  padding: 2%;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#home {
+  float: left;
+  padding-left: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
