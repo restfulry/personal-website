@@ -1,0 +1,16 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 2%;
+}
+
+.socials {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social-link {
+  color: #481da8;
+  margin-left: 3%;
+  margin-right: 3%;
+}

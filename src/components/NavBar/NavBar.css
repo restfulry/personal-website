@@ -1,5 +1,9 @@
 .nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   background-color: #fffafa;
+  margin: 1%;
 }
 
 .NavBar-link {
@@ -17,4 +21,5 @@
   padding-left: 10px;
   text-decoration: none;
   text-transform: uppercase;
+  color: #842988;
 }
