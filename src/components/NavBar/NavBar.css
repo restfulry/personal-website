@@ -1,5 +1,5 @@
 .nav {
-  background-color: #ededf5;
+  background-color: #fffafa;
 }
 
 .NavBar-link {
@@ -8,6 +8,8 @@
   padding: 2%;
   text-decoration: none;
   text-transform: uppercase;
+  font-weight: bolder;
+  color: #dd6546;
 }
 
 #home {

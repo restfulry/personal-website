@@ -21,8 +21,12 @@
   font-weight: bolder;
 }
 
+p {
+  font-weight: bolder;
+}
+
 div.code {
-  background-image: linear-gradient(#5621bc, #5210ac, #622cad, #3f0c87);
+  background-image: linear-gradient(#481da8, #5210ac, #622cad, #481da8);
 }
 
 h1.code {

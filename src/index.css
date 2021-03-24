@@ -15,7 +15,6 @@ code {
 .flex-h {
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .align-flex-end {

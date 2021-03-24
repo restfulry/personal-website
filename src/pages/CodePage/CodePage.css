@@ -1,3 +1,55 @@
+h1 {
+  padding: 3%;
+}
+
+h3 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 p {
   color: #fffafa;
+}
+
+ul {
+  list-style: none;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  display: flex;
+  align-self: center;
+  justify-content: space-around;
+}
+
+h3 {
+  text-transform: uppercase;
+  color: #fffafa;
+  font-size: 0.7em;
+}
+
+a {
+  display: block;
+  font-weight: bolder;
+  letter-spacing: 0.03em;
+  color: #fffafa;
+  text-decoration: none;
+  align-items: center;
+}
+
+.code-projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.code-project {
+  display: flex;
+  align-self: center;
 }

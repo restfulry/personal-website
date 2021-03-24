@@ -3,6 +3,7 @@ import { Route, Switch } from "react-router-dom";
 import "./App.css";
 
 import NavBar from "../../components/NavBar/NavBar";
+import Footer from "../../components/Footer/Footer";
 import HomePage from "../HomePage/HomePage";
 import CodePage from "../CodePage/CodePage";
 
@@ -16,6 +17,7 @@ function App() {
         <Route exact path="/film" render={() => <HomePage />} />
         <Route exact path="/chocolate" render={() => <HomePage />} />
       </Switch>
+      <Footer />
     </div>
   );
 }
