@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { Route, Switch } from "react-router-dom";
 import "./App.css";
 
+import { Navbar2 } from "../../components";
+
 import NavBar from "../../components/NavBar/NavBar";
 import Footer from "../../components/Footer/Footer";
 import HomePage from "../HomePage/HomePage";
@@ -10,7 +12,7 @@ import CodePage from "../CodePage/CodePage";
 function App() {
   return (
     <div className="App">
-      <NavBar />
+      <Navbar2 />
       <Switch>
         <Route exact path="/" render={() => <HomePage />} />
         <Route exact path="/code" render={() => <CodePage />} />
