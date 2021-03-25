@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Route, Switch } from "react-router-dom";
 import "./App.css";
+import GlobalStyle from "../../globalStyles";
 
 import { Navbar2 } from "../../components";
 
@@ -12,6 +13,7 @@ import CodePage from "../CodePage/CodePage";
 function App() {
   return (
     <div className="App">
+      <GlobalStyle />
       <Navbar2 />
       <Switch>
         <Route exact path="/" render={() => <HomePage />} />
