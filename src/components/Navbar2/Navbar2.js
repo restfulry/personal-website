@@ -40,8 +40,8 @@ const Navbar2 = () => {
         <Nav2>
           <NavbarContainer>
             <NavLogo to="/">
-              <NavIcon />
-              ULTRA
+              {/* <NavIcon /> */}
+              RYAN LEE
             </NavLogo>
             <MobileHamburger onClick={handleClick}>
               {click ? <FaTimes /> : <FaBars />}
