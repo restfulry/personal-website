@@ -1,11 +1,18 @@
 import React from "react";
 import { Link } from 'react-router-dom';
+import { InfoSection } from "../../components";
+import { homeObjOne, homeObjTwo, homeObjThree, homeObjFour } from './Data';
 
 import "./HomePage.css"
 
 const homePage = () => {
   return (
     <div>
+      <InfoSection {...homeObjOne}/>
+      <InfoSection {...homeObjTwo}/>
+      <InfoSection {...homeObjThree}/>
+      <InfoSection {...homeObjFour}/>
+
       <div className="flex-h code">
           <Link to={{pathname: "/code"}} className="HomePage-link code">
             <h1 className="header-large code">Code.</h1>
