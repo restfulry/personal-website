@@ -9,7 +9,7 @@ export const homeObjOne = {
   buttonLabel: "Get Started",
   description: "description goes here",
   headline: "Headline",
-  img: require("../../images/Box_3.0_TAN.svg"),
+  img: require("../../images/Box_3.0_TAN.svg").default,
   alt: "Image Alt",
   start: "",
 };
@@ -25,7 +25,7 @@ export const homeObjTwo = {
   buttonLabel: "Get Started",
   description: "description goes here",
   headline: "Headline",
-  img: require("../../images/Box_3.0_TAN.svg"),
+  img: require("../../images/Box_3.0_TAN.svg").default,
   alt: "Image Alt",
   start: "true",
 };
@@ -41,7 +41,7 @@ export const homeObjThree = {
   buttonLabel: "Get Started",
   description: "description goes here",
   headline: "Headline",
-  img: require("../../images/Box_3.0_TAN.svg"),
+  img: require("../../images/Box_3.0_TAN.svg").default,
   alt: "Image Alt",
   start: "",
 };

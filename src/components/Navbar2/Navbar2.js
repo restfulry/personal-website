@@ -21,6 +21,8 @@ const Navbar2 = () => {
 
   const handleClick = () => setClick(!click);
 
+  const closeMobileMenu = () => setClick(false);
+
   const showButton = () => {
     if (window.innerWidth <= 960) {
       setButton(false);
@@ -39,7 +41,7 @@ const Navbar2 = () => {
       <IconContext.Provider value={{ color: "#fff" }}>
         <Nav2>
           <NavbarContainer>
-            <NavLogo to="/">
+            <NavLogo to="/" onClick={closeMobileMenu}>
               {/* <NavIcon /> */}
               RYAN LEE
             </NavLogo>
