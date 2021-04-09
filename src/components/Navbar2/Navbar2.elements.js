@@ -4,13 +4,13 @@ import { Link } from "react-router-dom";
 import { Container } from "../../globalStyles";
 
 export const Nav2 = styled.nav`
-  background: #101522;
+  background: rgba(0, 0, 0, 0)
   height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
-  position: sticky;
+
   top: 0;
   z-index: 999;
 `;
@@ -24,7 +24,7 @@ export const NavbarContainer = styled(Container)`
 `;
 
 export const NavLogo = styled(Link)`
-  color: #fff;
+  color: #481da8;
   justify-self: flex-start;
   cursor: pointer;
   text-decoration: none;
@@ -67,7 +67,7 @@ export const NavMenu = styled.ul`
     left: ${({ click }) => (click ? 0 : "-100%")};
     opacity: 1;
     transition: all 0.5s ease;
-    background: #101522;
+    background: rgba(0, 0, 0, 0.9);
   }
 `;
 
@@ -89,7 +89,7 @@ export const NavItem = styled.li`
 `;
 
 export const NavLinks = styled(Link)`
-  color: #fff;
+  color: #481da8;
   display: flex;
   align-items: center;
   text-decoration: none;
