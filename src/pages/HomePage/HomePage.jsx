@@ -1,7 +1,6 @@
 import React from "react";
-import { Link } from 'react-router-dom';
-import { InfoSection, HeroSection } from "../../components";
-import { homeHeroOne, homeHeroTwo, homeHeroThree, homeObjTwo, homeObjThree, homeObjFour } from './Data';
+import { HeroSection } from "../../components";
+import { homeHeroOne, homeHeroTwo, homeHeroThree } from './Data';
 
 import "./HomePage.css"
 

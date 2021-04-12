@@ -7,17 +7,26 @@ const HeroSection = ({
   primary,
   purpleBg,
   orangeBg,
-  lightText,
+  darkBg,
+  greenText,
+  yellowText,
+  blackText,
   headline,
   linkTo,
 }) => {
   return (
     <>
-      <HeroSec purpleBg={purpleBg} orangeBg={orangeBg}>
+      <HeroSec purpleBg={purpleBg} orangeBg={orangeBg} darkBg={darkBg}>
         <Container>
           <HeroRow>
             <Link to={`/${linkTo}`}>
-              <Heading lightText={lightText}>{headline}</Heading>
+              <Heading
+                yellowText={yellowText}
+                blackText={blackText}
+                greenText={greenText}
+              >
+                {headline}
+              </Heading>
             </Link>
           </HeroRow>
         </Container>

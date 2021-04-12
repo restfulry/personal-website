@@ -1,7 +1,7 @@
 export const homeHeroOne = {
   purpleBg: true,
   primary: true,
-  lightText: true,
+  greenText: true,
   headline: "Code.",
   linkTo: "code",
 };
@@ -9,6 +9,7 @@ export const homeHeroOne = {
 export const homeHeroTwo = {
   primary: false,
   lightText: true,
+  darkBg: true,
   headline: "Film.",
   linkTo: "film",
 };
@@ -16,7 +17,7 @@ export const homeHeroTwo = {
 export const homeHeroThree = {
   orangeBg: true,
   primary: true,
-  lightText: true,
+  yellowText: true,
   headline: "Chocolate.",
   linkTo: "chocolate",
 };
