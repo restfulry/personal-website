@@ -1,9 +1,13 @@
 import React from "react";
+import { TextSection, InfoSection } from "../../components";
+import { CodeTextHeader } from './Data';
 
 import "./CodePage.css"
 
 const codePage = () => {
   return (
+    <>
+    <TextSection {...CodeTextHeader}/>
     <div className="code-page">
       <div className="title">
         <h1 className="header-small code">Ryan Lee, <br></br>Software Engineer</h1>
@@ -65,6 +69,7 @@ const codePage = () => {
         </div>
       </div>
     </div>
+    </>
   )
 }
 

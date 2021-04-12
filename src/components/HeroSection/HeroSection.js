@@ -1,10 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Container, Button } from "../../globalStyles";
-import { HeroSec, HeroRow, TextWrapper, Heading } from "./HeroSection.Elements";
+import { Container } from "../../globalStyles";
+import { HeroSec, HeroRow, Heading } from "./HeroSection.Elements";
 
 const HeroSection = ({
-  primary,
   purpleBg,
   orangeBg,
   darkBg,
