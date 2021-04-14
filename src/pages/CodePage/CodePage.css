@@ -1,4 +1,4 @@
-.code-page {
+/* .code-page {
   background-image: linear-gradient(
     176deg,
     #481da8 10%,
@@ -22,6 +22,7 @@ ul {
 
 a {
   display: block;
+  font-size: 15vh;
   font-weight: bolder;
   letter-spacing: 0.03em;
   color: #fffafa;
@@ -65,4 +66,4 @@ li {
   display: flex;
   justify-content: center;
   font-size: 8em;
-}
+} */

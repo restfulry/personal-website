@@ -103,14 +103,14 @@ export const FooterLinkTitle = styled.h2`
 `;
 
 export const FooterLink = styled(Link)`
-color: #fff;
-text-decorationL none;
-margin-bottom: 0.5rem;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
 
-&:hover {
-  color: #0467fb;
-  transition: 0.3s ease-out;
-}
+  &:hover {
+    color: #0467fb;
+    transition: 0.3s ease-out;
+  }
 `;
 
 export const SocialMedia = styled.section`

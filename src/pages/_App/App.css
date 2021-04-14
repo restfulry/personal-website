@@ -1,6 +1,10 @@
-/* .App {
+.App {
   display: flex;
   flex-direction: column;
+}
+
+a {
+  text-decoration: none;
 }
 
 .header-large {
@@ -47,4 +51,4 @@ div.chocolate {
 
 h1.chocolate {
   color: #fcf567;
-} */
+}
