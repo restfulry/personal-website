@@ -17,6 +17,7 @@ const TextSection = ({
   subtitle,
   headline,
   description,
+  mouseX,
 }) => {
   return (
     <>
@@ -24,7 +25,9 @@ const TextSection = ({
         <Container>
           <InfoRow>
             <TextWrapper>
-              <Heading greenText={greenText}>{headline}</Heading>
+              <Heading greenText={greenText} mouseX={mouseX}>
+                {headline}
+              </Heading>
               <Subtitle lightTextDesc={lightTextDesc}>{subtitle}</Subtitle>
               <DescriptionText>{description}</DescriptionText>
             </TextWrapper>

@@ -46,6 +46,6 @@ export const Heading = styled.h1`
   transition: all 0.5s ease;
 
   &:hover {
-    font-size: 15.3vw;
+    transform: scale(1.03);
   }
 `;

@@ -9,6 +9,7 @@ import { Navbar2, Footer } from "../../components";
 // import Footer from "../Footer/Footer";
 import HomePage from "../HomePage/HomePage";
 import CodePage from "../CodePage/CodePage";
+import FilmPage from "../FilmPage/FilmPage";
 import ScrollToTop from "../../components/ScrollToTop";
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
       <Switch>
         <Route exact path="/" render={() => <HomePage />} />
         <Route exact path="/code" render={() => <CodePage />} />
-        <Route exact path="/film" render={() => <HomePage />} />
+        <Route exact path="/film" render={() => <FilmPage />} />
         <Route exact path="/chocolate" render={() => <HomePage />} />
       </Switch>
       <Footer />

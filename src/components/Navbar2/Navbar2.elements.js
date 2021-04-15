@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 import { Container } from "../../globalStyles";
 
 export const Nav2 = styled.nav`
-  background: rgba(0, 0, 0, 0)
-  height: 80px;
+  background: ${({ purpleBg }) => (purpleBg ? "#622cad" : "#622cad")};
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
