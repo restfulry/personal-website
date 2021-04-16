@@ -24,7 +24,8 @@ export const NavbarContainer = styled(Container)`
 `;
 
 export const NavLogo = styled(Link)`
-  color: #481da8;
+  color: #fffafa;
+  font-weight: bold;
   justify-self: flex-start;
   cursor: pointer;
   text-decoration: none;
@@ -89,7 +90,9 @@ export const NavItem = styled.li`
 `;
 
 export const NavLinks = styled(Link)`
-  color: #481da8;
+  color: #fffafa;
+  text-transform: uppercase;
+  font-size: 0.9rem;
   display: flex;
   align-items: center;
   text-decoration: none;

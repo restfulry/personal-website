@@ -3,7 +3,7 @@ export const FilmTextHeader = {
   primary: false,
   greenText: false,
   lightTextDesc: false,
-  headline: "Ryan Lee,",
+  headlineBg: "Ryan Lee,",
   subtitle: "Director & DP",
   description:
     "I bridge the gap between real-world and digital experiences. I solve human problems and take ideas from 0 to 1.",

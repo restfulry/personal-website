@@ -1,19 +1,51 @@
 import React, { useEffect, useCallback, useState } from "react";
 import { TextSection, PortfolioSection } from "../../components";
-import { CodeTextHeader, PortfolioSectionData } from './Data';
+import { CodeTextHeader, CodeTextHeaderBackground, PortfolioSectionData } from './Data';
 
 import "./CodePage.css"
 
 const CodePage = () => {
 
   const [mouseX, setMouseX] = useState(0);
-  
-  // find window size
+  const [mouseRelX, setMouseRelX] = useState(0);
+  const [mouseRelY, setMouseRelY] = useState(0);
+  const [xStretch, setXStretch] = useState(0.9996);
+  const [yStretch, setYStretch] = useState(0.9996);
+  const [xAxisRotate, setXAxisRotate] = useState(0);
+  const [yAxisRotate, setYAxisRotate] = useState(0);
+  const [xTranslate, setXTranslate] = useState(0);
+  const [yTranslate, setYTranslate] = useState(0);
   
   const mouseMove = useCallback(
     (e) => {
       const xPos = e.clientX;
+      const yPos = e.clientY;
+      const winWidth = window.innerWidth;
+      const winHeight = window.innerHeight;
+      const relXPos = (xPos/winWidth * 2) - 1;
+      const relYPos = (yPos/winHeight * 2) - 1;
+
+      const xStretch = 0.9996 + relXPos * 0.000012;
+      const yStretch = 0.9996 + relYPos * 0.000012;
+      
+      const xAxisRotate = -relYPos * .0286474;
+      const yAxisRotate = -relXPos * .0286474;
+
+      const xTranslate = relXPos * 18;
+      const yTranslate = relYPos * 44;
+
       setMouseX(xPos);
+      setMouseRelX(relXPos);
+      setMouseRelY(relYPos);
+
+      setXStretch(xStretch);
+      setYStretch(yStretch);
+
+      setXAxisRotate(xAxisRotate);
+      setYAxisRotate(yAxisRotate);
+
+      setXTranslate(xTranslate);
+      setYTranslate(yTranslate);
     },
     [],
   )
@@ -27,7 +59,17 @@ const CodePage = () => {
 
   return (
     <>
-    <TextSection {...CodeTextHeader} mouseX={mouseX}/>
+    <TextSection 
+      {...CodeTextHeader} 
+      mouseX={mouseX} 
+      mouseRelX={mouseRelX} 
+      mouseRelY={mouseRelY} 
+      xStretch={xStretch} 
+      yStretch={yStretch} 
+      xAxisRotate={xAxisRotate} 
+      yAxisRotate={yAxisRotate} 
+      xTranslate={xTranslate} 
+      yTranslate={yTranslate}/>
     <PortfolioSection {...PortfolioSectionData}/>
     </>
   )

@@ -43,7 +43,7 @@ const Navbar2 = () => {
           <NavbarContainer>
             <NavLogo to="/" onClick={closeMobileMenu}>
               {/* <NavIcon /> */}
-              RYAN LEE
+              RY
             </NavLogo>
             <MobileHamburger onClick={handleClick}>
               {click ? <FaTimes /> : <FaBars />}

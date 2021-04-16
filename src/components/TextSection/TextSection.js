@@ -6,6 +6,7 @@ import {
   InfoColumn,
   TextWrapper,
   Heading,
+  HeadingStatic,
   Subtitle,
   DescriptionText,
 } from "./TextSection.Elements";
@@ -16,16 +17,33 @@ const TextSection = ({
   lightTextDesc,
   subtitle,
   headline,
+  headlineBg,
   description,
-  mouseX,
+  xStretch,
+  yStretch,
+  xAxisRotate,
+  yAxisRotate,
+  xTranslate,
+  yTranslate,
 }) => {
+  console.log(xAxisRotate);
+
   return (
     <>
       <InfoSec purpleBg={purpleBg}>
         <Container>
           <InfoRow>
             <TextWrapper>
-              <Heading greenText={greenText} mouseX={mouseX}>
+              <HeadingStatic>{headlineBg}</HeadingStatic>
+              <Heading
+                greenText={greenText}
+                xStretch={xStretch}
+                yStretch={yStretch}
+                xAxisRotate={xAxisRotate}
+                yAxisRotate={yAxisRotate}
+                xTranslate={xTranslate}
+                yTranslate={yTranslate}
+              >
                 {headline}
               </Heading>
               <Subtitle lightTextDesc={lightTextDesc}>{subtitle}</Subtitle>
