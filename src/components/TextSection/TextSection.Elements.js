@@ -34,7 +34,7 @@ export const Heading = styled.h1`
   text-align: center;
   margin-bottom: 3px;
   font-size: 30vh;
-  transition: all 0.1s ease-in;
+  transition: all 1s ease-out;
   color: ${({ greenText }) => (greenText ? "#85FF9E" : "#ededf5")};
 `;
 

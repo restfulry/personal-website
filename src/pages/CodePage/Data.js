@@ -3,7 +3,7 @@ export const CodeTextHeader = {
   primary: false,
   greenText: true,
   lightTextDesc: false,
-  headline: "ZZZ",
+  headline: "Z",
   headlineBg: "Code.",
   subtitle: "",
   description: "",

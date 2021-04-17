@@ -26,8 +26,6 @@ const TextSection = ({
   xTranslate,
   yTranslate,
 }) => {
-  console.log(xAxisRotate, yAxisRotate);
-
   return (
     <>
       <InfoSec purpleBg={purpleBg}>
@@ -49,7 +47,7 @@ const TextSection = ({
                    ${yAxisRotate},
                   0,
                   0.5rad
-                )`,
+                ) translate(${xTranslate}px, ${yTranslate}px) skew(${xStretch}deg, ${yStretch}deg)`,
                 }}
               >
                 {headline}
