@@ -4,7 +4,14 @@ import { Link } from "react-router-dom";
 import { Container } from "../../globalStyles";
 
 export const Nav2 = styled.nav`
-  background: ${({ purpleBg }) => (purpleBg ? "#622cad" : "#622cad")};
+  background: ${({ purpleBg, blueBg, whiteBg }) =>
+    purpleBg
+      ? "#622cad"
+      : blueBg
+      ? "#1147b0"
+      : whiteBg
+      ? "rgba(255,250,250,1)"
+      : "#622cad"};
   height: 50px;
   display: flex;
   justify-content: center;
@@ -24,7 +31,7 @@ export const NavbarContainer = styled(Container)`
 `;
 
 export const NavLogo = styled(Link)`
-  color: #fffafa;
+  color: ${({ whiteBg }) => (whiteBg ? "#080808" : "#fffafa")};
   font-weight: bold;
   justify-self: flex-start;
   cursor: pointer;
@@ -90,7 +97,7 @@ export const NavItem = styled.li`
 `;
 
 export const NavLinks = styled(Link)`
-  color: #fffafa;
+  color: ${({ whiteBg }) => (whiteBg ? "#080808" : "#fffafa")};
   text-transform: uppercase;
   font-size: 0.9rem;
   display: flex;

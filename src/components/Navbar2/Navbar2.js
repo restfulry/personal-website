@@ -15,7 +15,7 @@ import {
   NavBtnLink,
 } from "./Navbar2.elements";
 
-const Navbar2 = () => {
+const Navbar2 = ({ blueBg, whiteBg }) => {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
 
@@ -39,9 +39,9 @@ const Navbar2 = () => {
   return (
     <>
       <IconContext.Provider value={{ color: "#fff" }}>
-        <Nav2>
+        <Nav2 blueBg={blueBg} whiteBg={whiteBg}>
           <NavbarContainer>
-            <NavLogo to="/" onClick={closeMobileMenu}>
+            <NavLogo to="/" onClick={closeMobileMenu} whiteBg={whiteBg}>
               {/* <NavIcon /> */}
               RY
             </NavLogo>
@@ -50,16 +50,24 @@ const Navbar2 = () => {
             </MobileHamburger>
             <NavMenu onClick={handleClick} click={click}>
               <NavItem>
-                <NavLinks to="/">Home</NavLinks>
+                <NavLinks to="/" whiteBg={whiteBg}>
+                  Home
+                </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="/code">Code</NavLinks>
+                <NavLinks to="/code" whiteBg={whiteBg}>
+                  Code
+                </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="/film">Film</NavLinks>
+                <NavLinks to="/film" whiteBg={whiteBg}>
+                  Film
+                </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="/chocolate">Chocolate</NavLinks>
+                <NavLinks to="/chocolate" whiteBg={whiteBg}>
+                  Chocolate
+                </NavLinks>
               </NavItem>
               <NavItemBtn>
                 {button ? (

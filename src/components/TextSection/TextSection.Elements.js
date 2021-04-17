@@ -51,7 +51,7 @@ export const HeadingStatic = styled.h1`
 export const Subtitle = styled.p`
   max-width: 540px;
   margin-bottom: 20px;
-  font-size: 18vh;
+  font-size: 5vh;
   font-weight: bold;
   color: ${({ lightTextDesc }) => (lightTextDesc ? "#a9b3c1" : "#080808")};
 `;

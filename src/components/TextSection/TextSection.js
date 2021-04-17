@@ -15,6 +15,7 @@ const TextSection = ({
   purpleBg,
   blueBg,
   greenText,
+  blackText,
   lightTextDesc,
   subtitle,
   headline,
@@ -33,7 +34,9 @@ const TextSection = ({
         <Container>
           <InfoRow>
             <TextWrapper>
-              <HeadingStatic greenText={greenText}>{headlineBg}</HeadingStatic>
+              <HeadingStatic greenText={greenText} blackText={blackText}>
+                {headlineBg}
+              </HeadingStatic>
               <Heading
                 xStretch={xStretch}
                 yStretch={yStretch}

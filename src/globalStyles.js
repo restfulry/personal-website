@@ -30,13 +30,15 @@ export const Container = styled.div`
 `;
 
 export const Button = styled.button`
-  border-radius: 4px;
+  border-radius: 1px;
   font-weight: bold;
-  background: ${({ primary }) => (primary ? "#4B59F7" : "#0467FB")};
+  text-transform: uppercase;
+  background: ${({ primary }) => (primary ? "#0467FB" : "#0467FB")};
   white-space: nowrap;
+  margin-left: 3vw;
   padding: ${({ big }) => (big ? "12px 64px" : "10px 20px")};
   color: #fff;
-  font-size: ${({ fontBig }) => (fontBig ? "20px" : "16px")};
+  // font-size: ${({ fontBig }) => (fontBig ? "20px" : "16px")};
   outline: none;
   border: none;
   cursor: pointer;
