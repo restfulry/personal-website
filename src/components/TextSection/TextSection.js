@@ -13,6 +13,7 @@ import {
 
 const TextSection = ({
   purpleBg,
+  blueBg,
   greenText,
   lightTextDesc,
   subtitle,
@@ -28,13 +29,12 @@ const TextSection = ({
 }) => {
   return (
     <>
-      <InfoSec purpleBg={purpleBg}>
+      <InfoSec purpleBg={purpleBg} blueBg={blueBg}>
         <Container>
           <InfoRow>
             <TextWrapper>
-              <HeadingStatic>{headlineBg}</HeadingStatic>
+              <HeadingStatic greenText={greenText}>{headlineBg}</HeadingStatic>
               <Heading
-                greenText={greenText}
                 xStretch={xStretch}
                 yStretch={yStretch}
                 xAxisRotate={xAxisRotate}

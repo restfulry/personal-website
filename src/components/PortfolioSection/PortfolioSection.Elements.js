@@ -27,6 +27,7 @@ export const Heading = styled.h2`
   margin-bottom: 3px;
   font-size: 1vh;
   text-transform: uppercase;
+  border-bottom: 2px solid #f5efed;
   color: ${({ greenText }) => (greenText ? "#85FF9E" : "#ededf5")};
 `;
 

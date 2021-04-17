@@ -1,5 +1,6 @@
 export const CodeTextHeader = {
-  purpleBg: true,
+  purpleBg: false,
+  blueBg: true,
   primary: false,
   greenText: true,
   lightTextDesc: false,

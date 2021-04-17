@@ -73,7 +73,7 @@ export const NavMenu = styled.ul`
 `;
 
 export const NavItem = styled.li`
-  height: 80px;
+  height: 50px;
   border-bottom: 2px solid transparent;
 
   &:hover {
