@@ -15,6 +15,7 @@ import {
 
 const PortfolioSection = ({
   purpleBg,
+  blueBg,
   greenText,
   headline,
   headlineSkills,
@@ -24,7 +25,7 @@ const PortfolioSection = ({
 }) => {
   return (
     <>
-      <InfoSec purpleBg={purpleBg}>
+      <InfoSec purpleBg={purpleBg} blueBg={blueBg}>
         <Container>
           <InfoRow>
             <TextWrapper>

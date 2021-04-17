@@ -3,7 +3,8 @@ import styled from "styled-components";
 export const InfoSec = styled.div`
   color: #fff;
   padding: 10px 0;
-  background: ${({ purpleBg }) => (purpleBg ? "#622cad" : "#101522")};
+  background: ${({ purpleBg, blueBg }) =>
+    purpleBg ? "#622cad" : blueBg ? "#0d20a2" : "#101522"};
 `;
 
 export const InfoRow = styled.div`

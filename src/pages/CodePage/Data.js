@@ -11,7 +11,8 @@ export const CodeTextHeader = {
 };
 
 export const PortfolioSectionData = {
-  purpleBg: true,
+  purpleBg: false,
+  blueBg: true,
   headline: "SELECT PROJECTS",
   headlineSkills: "skills",
   portfolioItem: "TokTik",

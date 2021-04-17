@@ -7,6 +7,11 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
+
+p, h2, h3, h4, h5 {
+  font-family: 'Lato', sans-serif;
+}
+
 `;
 
 export const Container = styled.div`
