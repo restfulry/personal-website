@@ -26,7 +26,7 @@ const TextSection = ({
   xTranslate,
   yTranslate,
 }) => {
-  console.log(xAxisRotate);
+  console.log(xAxisRotate, yAxisRotate);
 
   return (
     <>
@@ -43,6 +43,14 @@ const TextSection = ({
                 yAxisRotate={yAxisRotate}
                 xTranslate={xTranslate}
                 yTranslate={yTranslate}
+                style={{
+                  transform: `rotate3d(
+                  ${xAxisRotate},
+                   ${yAxisRotate},
+                  0,
+                  0.5rad
+                )`,
+                }}
               >
                 {headline}
               </Heading>

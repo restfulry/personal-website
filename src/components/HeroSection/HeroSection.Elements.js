@@ -5,11 +5,11 @@ export const HeroSec = styled.div`
   padding: 18vw 0;
   background: ${({ purpleBg, orangeBg, darkBg }) =>
     purpleBg
-      ? "#622cad"
+      ? "linear-gradient(rgba(98, 44, 173, 1) 0%,rgba(87, 25, 172, 1) 45%,rgba(77, 15, 152, 1) 60%,rgba(85, 26, 171, 1) 65%,rgba(98, 44, 173, 1) 100%)"
       : orangeBg
       ? "#dd6546"
       : darkBg
-      ? "#151513"
+      ? "linear-gradient(0deg, rgba(20,20,20,1) 0%, rgba(15,15,15,1) 45%, rgba(8,8,8,1) 60%, rgba(20,20,20,1) 65%, rgba(15,15,15,1) 100%)"
       : "#ededf5"};
 `;
 

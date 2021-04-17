@@ -31,27 +31,10 @@ export const TextWrapper = styled.div`
 `;
 
 export const Heading = styled.h1`
+  text-align: center;
   margin-bottom: 3px;
   font-size: 30vh;
-  transition: all 0.5s ease-in;
-  transform: matrix3d(
-    ${({ xStretch }) => (xStretch ? xStretch : 1)},
-    0,
-    ${({ yAxisRotate }) => (yAxisRotate ? yAxisRotate : 0)},
-    0,
-    0,
-    1,
-    0,
-    0,
-    ${({ xAxisRotate }) => (xAxisRotate ? xAxisRotate : 0)},
-    0,
-    ${({ yStretch }) => (yStretch ? yStretch : 1)},
-    0,
-    0,
-    ${({ xTranslate }) => (xTranslate ? xTranslate : 0)},
-    ${({ yTranslate }) => (yTranslate ? yTranslate : 0)},
-    1
-  );
+  transition: all 0.1s ease-in;
   color: ${({ greenText }) => (greenText ? "#85FF9E" : "#ededf5")};
 `;
 
