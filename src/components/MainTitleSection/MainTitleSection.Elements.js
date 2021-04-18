@@ -32,6 +32,18 @@ export const TextWrapper = styled.div`
   }
 `;
 
+export const ImgWrapper = styled.div``;
+
+export const Img = styled.img`
+  padding-right: 0;
+  border: 0;
+  max-width: 100%;
+  vertical-align: middle;
+  display: inline-block;
+  max-height: 500px;
+  transition: all 2s ease-out;
+`;
+
 export const Heading = styled.h1`
   text-align: center;
   padding-top: 35px;

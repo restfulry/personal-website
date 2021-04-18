@@ -8,6 +8,8 @@ import {
   HeadingStatic,
   Subtitle,
   DescriptionText,
+  ImgWrapper,
+  Img,
 } from "./MainTitleSection.Elements";
 
 const MainTitleSection = ({
@@ -18,6 +20,8 @@ const MainTitleSection = ({
   blackText,
   yellowText,
   lightTextDesc,
+  img,
+  alt,
   subtitle,
   headline,
   headlineBg,
@@ -42,6 +46,26 @@ const MainTitleSection = ({
               >
                 {headlineBg}
               </HeadingStatic>
+              <ImgWrapper>
+                <Img
+                  src={img}
+                  alt={alt}
+                  xStretch={xStretch}
+                  yStretch={yStretch}
+                  xAxisRotate={xAxisRotate}
+                  yAxisRotate={yAxisRotate}
+                  xTranslate={xTranslate}
+                  yTranslate={yTranslate}
+                  style={{
+                    transform: `rotate3d(
+                  ${xAxisRotate},
+                   ${yAxisRotate},
+                  0,
+                  0.5rad
+                ) translate(${xTranslate}px, ${yTranslate}px) skew(${xStretch}deg, ${yStretch}deg)`,
+                  }}
+                />
+              </ImgWrapper>
               <Heading
                 xStretch={xStretch}
                 yStretch={yStretch}
