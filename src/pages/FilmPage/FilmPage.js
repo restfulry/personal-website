@@ -1,7 +1,7 @@
 import React from "react";
 import ReactPlayer from "react-player";
 import styles from "./FilmPage.css";
-import { Navbar2, TextSection, PortfolioSection } from "../../components";
+import { Navbar2, MainTitleSection, PortfolioSection } from "../../components";
 import { FilmTextHeader, PortfolioSectionData } from "./Data";
 
 const filmPage = ({
@@ -15,7 +15,7 @@ const filmPage = ({
   return (
     <>
       <Navbar2 whiteBg="true" />
-      <TextSection
+      <MainTitleSection
         {...FilmTextHeader}
         xStretch={xStretch}
         yStretch={yStretch}

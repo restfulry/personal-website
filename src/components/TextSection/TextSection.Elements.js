@@ -1,22 +1,13 @@
 import styled from "styled-components";
 
-export const InfoSec = styled.div`
+export const TextSec = styled.div`
   color: #fff;
-  background: rgb(72, 29, 168);
-  background: ${({ purpleBg, whiteBg, orangeBg, blueBg }) =>
-    purpleBg
-      ? "linear-gradient(rgba(98, 44, 173, 1) 0%,rgba(87, 25, 172, 1) 45%,rgba(77, 15, 152, 1) 60%,rgba(85, 26, 171, 1) 65%,rgba(98, 44, 173, 1) 100%)"
-      : whiteBg
-      ? "linear-gradient(rgba(255,250,250,1) 0%, rgba(255,251,250,1) 45%, rgba(255,251,250,1) 50%, #f5efed 65%, rgba(255,250,250,1) 100%)"
-      : orangeBg
-      ? "#FFF"
-      : blueBg
-      ? "linear-gradient(180deg, rgba(17,71,176,1) 0%, rgba(13,32,162,1) 45%, rgba(13,27,161,1) 50%, rgba(17,71,176,1) 65%, rgba(13,32,162,1) 100%)"
-      : "#FFF"};
+  padding: 10px 0;
+  background: ${({ purpleBg, blueBg }) =>
+    purpleBg ? "#622cad" : blueBg ? "#0d20a2" : "#101522"};
 `;
 
 export const InfoRow = styled.div`
-  height: calc(100vh - 160px);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -24,45 +15,74 @@ export const InfoRow = styled.div`
 `;
 
 export const TextWrapper = styled.div`
-  max-width: 1080px;
   padding-top: 0;
+  padding-bottom: 60px;
 
   @media screen and (max-width: 768px) {
     padding-bottom: 65px;
   }
 `;
 
-export const Heading = styled.h1`
-  text-align: center;
-  padding-top: 35px;
-  margin-bottom: 0px;
-  font-size: 30vh;
-  transition: all 2s ease-out;
+export const Heading = styled.h2`
+  margin-top: 20px;
+  margin-bottom: 3px;
+  font-size: 1vh;
+  text-transform: uppercase;
+  border-bottom: 2px solid #f5efed;
   color: ${({ greenText }) => (greenText ? "#85FF9E" : "#ededf5")};
 `;
 
-export const HeadingStatic = styled.h1`
-  margin-bottom: -500px;
-  font-size: 30vh;
-  color: ${({ greenText, blackText }) =>
-    greenText ? "#85FF9E" : blackText ? "#080808" : "#FFF"};
+export const Paragraph = styled.p`
+  margin-top: 20px;
+  margin-bottom: 3px;
+  font-size: 1vh;
+  color: ${({ greenText }) => (greenText ? "#85FF9E" : "#ededf5")};
 `;
 
-export const Subtitle = styled.p`
-  max-width: 540px;
-  margin-bottom: 20px;
-  font-size: 5vh;
-  font-weight: bold;
-  color: ${({ lightTextDesc }) => (lightTextDesc ? "#a9b3c1" : "#080808")};
+export const PortfolioItem = styled.h1`
+  text-decoration: none;
+  margin-bottom: 3px;
+  font-size: 12vmin;
+  color: ${({ greenText }) => (greenText ? "#85FF9E" : "#ededf5")};
 `;
 
-export const DescriptionText = styled.p`
-  max-width: 540px;
-  margin-bottom: 35px;
-  padding-right: 50px;
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 24px;
-  align-self: center;
-  color: #ededf5;
+export const SkillsContainer = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+
+  @media screen and (max-width: 820px) {
+    padding-top: 32px;
+  }
+`;
+
+export const SkillsWrapper = styled.div`
+  display: flex;
+
+  @media screen and (max-width: 820px) {
+    flex-direction: column;
+  }
+`;
+
+export const SkillsItems = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 16px;
+  text-align: center;
+  width: 160px;
+  box-sizing: border-box;
+  color: #fff;
+
+  @media screen and (max-width: 420px) {
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+  }
+`;
+
+export const SkillItem = styled.h2`
+  margin-bottom: 16px;
 `;

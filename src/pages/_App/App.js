@@ -12,6 +12,7 @@ import { Footer } from "../../components";
 import HomePage from "../HomePage/HomePage";
 import CodePage from "../CodePage/CodePage";
 import FilmPage from "../FilmPage/FilmPage";
+import ChocolatePage from "../ChocolatePage/ChocolatePage";
 import ScrollToTop from "../../components/ScrollToTop";
 
 const App = () => {
@@ -107,7 +108,7 @@ const App = () => {
           exact
           path="/chocolate"
           render={() => (
-            <HomePage
+            <ChocolatePage
               xStretch={xStretch}
               yStretch={yStretch}
               xAxisRotate={xAxisRotate}

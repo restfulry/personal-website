@@ -4,13 +4,15 @@ import { Link } from "react-router-dom";
 import { Container } from "../../globalStyles";
 
 export const Nav2 = styled.nav`
-  background: ${({ purpleBg, blueBg, whiteBg }) =>
+  background: ${({ purpleBg, blueBg, whiteBg, orangeBg }) =>
     purpleBg
       ? "#622cad"
       : blueBg
       ? "#1147b0"
       : whiteBg
       ? "rgba(255,250,250,1)"
+      : orangeBg
+      ? "#dd6546"
       : "#622cad"};
   height: 50px;
   display: flex;

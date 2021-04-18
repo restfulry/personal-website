@@ -39,7 +39,7 @@ export const Heading = styled.h1`
     yellowText
       ? "#f4e044"
       : blackText
-      ? "#00000"
+      ? "#080808"
       : greenText
       ? "#85FF9E"
       : "#ededf5"};

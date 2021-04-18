@@ -1,32 +1,37 @@
 import React from "react";
-import { TextSection, PortfolioSection } from "../../components";
-import { CodeTextHeader, CodeTextHeaderBackground, PortfolioSectionData } from './Data';
+import { MainTitleSection, PortfolioSection } from "../../components";
+import {
+  CodeTextHeader,
+  CodeTextHeaderBackground,
+  PortfolioSectionData,
+} from "./Data";
 import { Navbar2 } from "../../components";
 
-import "./CodePage.css"
+import "./CodePage.css";
 
-const CodePage = ({  
+const CodePage = ({
   xStretch,
   yStretch,
   xAxisRotate,
   yAxisRotate,
   xTranslate,
-  yTranslate}) => {
-
+  yTranslate,
+}) => {
   return (
     <>
-    <Navbar2 blueBg="true"/>
-    <TextSection 
-      {...CodeTextHeader} 
-      xStretch={xStretch} 
-      yStretch={yStretch} 
-      xAxisRotate={xAxisRotate} 
-      yAxisRotate={yAxisRotate} 
-      xTranslate={xTranslate} 
-      yTranslate={yTranslate}/>
-    <PortfolioSection {...PortfolioSectionData}/>
+      <Navbar2 blueBg="true" />
+      <MainTitleSection
+        {...CodeTextHeader}
+        xStretch={xStretch}
+        yStretch={yStretch}
+        xAxisRotate={xAxisRotate}
+        yAxisRotate={yAxisRotate}
+        xTranslate={xTranslate}
+        yTranslate={yTranslate}
+      />
+      <PortfolioSection {...PortfolioSectionData} />
     </>
-  )
-}
+  );
+};
 
 export default CodePage;
