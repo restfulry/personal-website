@@ -12,6 +12,7 @@ const ChocolatePage = ({
   yStretch,
   xAxisRotate,
   yAxisRotate,
+  rotateAngle,
   xTranslate,
   yTranslate,
 }) => {
@@ -26,6 +27,7 @@ const ChocolatePage = ({
         yAxisRotate={yAxisRotate}
         xTranslate={xTranslate}
         yTranslate={yTranslate}
+        rotateAngle={rotateAngle}
       />
       <TextSection {...TextSectionData} />
       <PortfolioSection {...PortfolioSectionData} />

@@ -18,24 +18,29 @@ export const InfoSec = styled.div`
 export const InfoRow = styled.div`
   height: calc(100vh - 160px);
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 `;
 
 export const TextWrapper = styled.div`
-  max-width: 1080px;
+  max-width: 100vw;
   padding-top: 0;
+  perspective: 50px;
+  perspective-origin: 50% 50%;
 
   @media screen and (max-width: 768px) {
     padding-bottom: 65px;
   }
 `;
 
-export const ImgWrapper = styled.div``;
+export const ImgWrapper = styled.div`
+  perspective: 50px;
+  perspective-origin: 50% 50%;
+`;
 
 export const Img = styled.img`
   padding-right: 0;
+  padding-left: 50vh;
   border: 0;
   max-width: 100%;
   vertical-align: middle;
@@ -56,7 +61,7 @@ export const Heading = styled.h1`
 
 export const HeadingStatic = styled.h1`
   margin-bottom: -500px;
-  font-size: 30vh;
+  font-size: 25vh;
   color: ${({ greenText, blackText, yellowText }) =>
     greenText
       ? "#85FF9E"

@@ -27,6 +27,7 @@ const App = () => {
   const [yStretch, setYStretch] = useState(0.9996);
   const [xAxisRotate, setXAxisRotate] = useState(0);
   const [yAxisRotate, setYAxisRotate] = useState(0);
+  const [rotateAngle, setRotateAngle] = useState(0);
   const [xTranslate, setXTranslate] = useState(0);
   const [yTranslate, setYTranslate] = useState(0);
 
@@ -45,10 +46,11 @@ const App = () => {
     const yStretch = 0.9996 + relYPos * 0.000012;
 
     const xAxisRotate = -relYPos * 0.0286474;
-    const yAxisRotate = -relXPos * 0.0286474;
+    const yAxisRotate = relXPos * 0.3286474;
+    const rotateAngle = Math.atan(relXPos);
 
-    const xTranslate = relXPos * 18;
-    const yTranslate = relYPos * 44;
+    const xTranslate = -relXPos * 18;
+    const yTranslate = -relYPos * 44;
 
     setMouseRelX(relXPos);
     setMouseRelY(relYPos);
@@ -58,6 +60,7 @@ const App = () => {
 
     setXAxisRotate(xAxisRotate.toFixed(2));
     setYAxisRotate(yAxisRotate.toFixed(2));
+    setRotateAngle(rotateAngle);
 
     setXTranslate(xTranslate);
     setYTranslate(yTranslate);
@@ -115,6 +118,7 @@ const App = () => {
               yAxisRotate={yAxisRotate}
               xTranslate={xTranslate}
               yTranslate={yTranslate}
+              rotateAngle={rotateAngle}
             />
           )}
         />
