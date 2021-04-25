@@ -7,12 +7,12 @@ export const InfoSec = styled.div`
     purpleBg
       ? "linear-gradient(rgba(98, 44, 173, 1) 0%,rgba(87, 25, 172, 1) 45%,rgba(77, 15, 152, 1) 60%,rgba(85, 26, 171, 1) 65%,rgba(98, 44, 173, 1) 100%)"
       : whiteBg
-      ? "linear-gradient(rgba(255,250,250,1) 0%, rgba(255,251,250,1) 45%, rgba(255,251,250,1) 50%, #f5efed 65%, rgba(255,250,250,1) 100%)"
+      ? "linear-gradient(rgba(255,250,250,1) 0%, rgba(255,251,250,1) 45%, rgba(255,251,250,1) 50%, rgba(245,239,237, 1) 65%, rgba(255,250,250,1) 100%)"
       : orangeBg
       ? "#dd6546"
       : blueBg
       ? "linear-gradient(180deg, rgba(17,71,176,1) 0%, rgba(13,32,162,1) 45%, rgba(13,27,161,1) 50%, rgba(17,71,176,1) 65%, rgba(13,32,162,1) 100%)"
-      : "#FFF"};
+      : "#000"};
 `;
 
 export const InfoRow = styled.div`
@@ -34,8 +34,9 @@ export const TextWrapper = styled.div`
 `;
 
 export const ImgWrapper = styled.div`
-  perspective: 50px;
-  perspective-origin: 50% 50%;
+  perspective: 100px;
+  perspective-origin: ${({xStretch}) => xStretch ? xStretch : 50}% ${({yStretch}) => yStretch ? yStretch : 50}%;
+  transition: all 2s ease-out;
 `;
 
 export const Img = styled.img`

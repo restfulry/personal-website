@@ -1,8 +1,8 @@
 import React from "react";
 import ReactPlayer from "react-player";
 import styles from "./FilmPage.css";
-import { Navbar2, MainTitleSection, PortfolioSection } from "../../components";
-import { FilmTextHeader, PortfolioSectionData } from "./Data";
+import { Navbar2, MainTitleSection, TextSection } from "../../components";
+import { FilmTextHeader, TextSectionData } from "./Data";
 
 const filmPage = ({
   xStretch,
@@ -24,6 +24,7 @@ const filmPage = ({
         xTranslate={xTranslate}
         yTranslate={yTranslate}
       />
+      <TextSection {...TextSectionData} />
       <div className="player-wrapper">
         <ReactPlayer
           className="react-player"

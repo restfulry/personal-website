@@ -1,10 +1,9 @@
 import React from "react";
 import {
   MainTitleSection,
-  PortfolioSection,
   TextSection,
 } from "../../components";
-import { ChocoTextHeader, PortfolioSectionData, TextSectionData } from "./Data";
+import { ChocoTextHeader, TextSectionData } from "./Data";
 import { Navbar2 } from "../../components";
 
 const ChocolatePage = ({

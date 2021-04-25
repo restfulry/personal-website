@@ -16,19 +16,19 @@ const Footer = () => {
         </FooterLinksContainer>
         <SocialMedia>
             <SocialIcons>
-              <SocialIconLink href='/' target="_blank" aria-label="LinkedIn">
+              <SocialIconLink href='https://www.linkedin.com/in/ryanjjlee/' target="_blank" aria-label="LinkedIn">
                 <FaLinkedin />
               </SocialIconLink>
-              <SocialIconLink href='/' target="_blank" aria-label="Vimeo">
+              <SocialIconLink href='https://vimeo.com/aliacreative' target="_blank" aria-label="Vimeo">
                 <FaVimeo />
               </SocialIconLink>
-              <SocialIconLink href='/' target="_blank" aria-label="Github">
+              <SocialIconLink href='https://github.com/ryanjjlee' target="_blank" aria-label="Github">
                 <FaGithub />
               </SocialIconLink>
-              <SocialIconLink href='/' target="_blank" aria-label="Twitter">
+              <SocialIconLink href='https://twitter.com/ryninjalee' target="_blank" aria-label="Twitter">
                 <FaTwitter />
               </SocialIconLink>
-              <SocialIconLink href='/' target="_blank" aria-label="Instagram">
+              <SocialIconLink href='https://www.instagram.com/rychocolatlee/' target="_blank" aria-label="Instagram">
                 <FaInstagram />
               </SocialIconLink>
             </SocialIcons>

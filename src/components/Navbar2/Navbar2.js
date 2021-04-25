@@ -9,8 +9,10 @@ import {
   NavIcon,
   MobileHamburger,
   NavMenu,
+  NavPrimary,
   NavItem,
   NavLinks,
+  NavContact,
   NavItemBtn,
   NavBtnLink,
 } from "./Navbar2.elements";
@@ -49,39 +51,35 @@ const Navbar2 = ({ blueBg, whiteBg, orangeBg }) => {
               {click ? <FaTimes /> : <FaBars />}
             </MobileHamburger>
             <NavMenu onClick={handleClick} click={click}>
-              <NavItem>
-                <NavLinks to="/" whiteBg={whiteBg}>
-                  Home
-                </NavLinks>
-              </NavItem>
-              <NavItem>
-                <NavLinks to="/code" whiteBg={whiteBg}>
-                  Code
-                </NavLinks>
-              </NavItem>
-              <NavItem>
-                <NavLinks to="/film" whiteBg={whiteBg}>
-                  Film
-                </NavLinks>
-              </NavItem>
-              <NavItem>
-                <NavLinks to="/chocolate" whiteBg={whiteBg}>
-                  Chocolate
-                </NavLinks>
-              </NavItem>
-              <NavItemBtn>
-                {button ? (
-                  <NavBtnLink to="/contact">
-                    <Button primary>Contact</Button>
-                  </NavBtnLink>
-                ) : (
-                  <NavBtnLink to="/contact">
-                    <Button fontBig primary>
-                      Contact
-                    </Button>
-                  </NavBtnLink>
-                )}
-              </NavItemBtn>
+              <NavPrimary>
+                <NavItem>
+                  <NavLinks to="/code" whiteBg={whiteBg}>
+                    Code
+                  </NavLinks>
+                </NavItem>
+                <NavItem>
+                  <NavLinks to="/film" whiteBg={whiteBg}>
+                    Film
+                  </NavLinks>
+                </NavItem>
+                <NavItem>
+                  <NavLinks to="/chocolate" whiteBg={whiteBg}>
+                    Chocolate
+                  </NavLinks>
+                </NavItem>
+                <NavItem>
+                  <NavLinks to="/who" whiteBg={whiteBg}>
+                    Who
+                  </NavLinks>
+                </NavItem>
+              </NavPrimary>
+              <NavContact onClick={handleClick} click={click}>
+                <NavItem>
+                  <NavLinks to="/contact" whiteBg={whiteBg}>
+                    Contact
+                  </NavLinks>
+                </NavItem>
+              </NavContact>
             </NavMenu>
           </NavbarContainer>
         </Nav2>

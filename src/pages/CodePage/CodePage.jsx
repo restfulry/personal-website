@@ -1,13 +1,14 @@
 import React from "react";
-import { MainTitleSection, PortfolioSection } from "../../components";
+import { MainTitleSection, PortfolioSection, TextSection } from "../../components";
 import {
   CodeTextHeader,
-  CodeTextHeaderBackground,
   PortfolioSectionData,
+  TextSectionData,
 } from "./Data";
 import { Navbar2 } from "../../components";
 
 import "./CodePage.css";
+import { TextSec } from "../../components/TextSection/TextSection.Elements";
 
 const CodePage = ({
   xStretch,
@@ -29,6 +30,7 @@ const CodePage = ({
         xTranslate={xTranslate}
         yTranslate={yTranslate}
       />
+      <TextSection {...TextSectionData} />
       <PortfolioSection {...PortfolioSectionData} />
     </>
   );

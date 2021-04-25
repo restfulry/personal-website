@@ -16,6 +16,7 @@ const MainTitleSection = ({
   purpleBg,
   blueBg,
   orangeBg,
+  whiteBg,
   greenText,
   blackText,
   yellowText,
@@ -36,7 +37,7 @@ const MainTitleSection = ({
 }) => {
   return (
     <>
-      <InfoSec purpleBg={purpleBg} blueBg={blueBg} orangeBg={orangeBg}>
+      <InfoSec purpleBg={purpleBg} blueBg={blueBg} orangeBg={orangeBg} whiteBg={whiteBg}>
         <Container>
           <InfoRow>
             <TextWrapper>
@@ -47,7 +48,9 @@ const MainTitleSection = ({
               >
                 {headlineBg}
               </HeadingStatic>
-              <ImgWrapper>
+              <ImgWrapper                   
+                  xStretch={xStretch}
+                  yStretch={yStretch}>
                 <Img
                   src={img}
                   alt={alt}
@@ -61,7 +64,6 @@ const MainTitleSection = ({
                     transform: `
                       rotateY(${yAxisRotate}deg) 
                       translate(${xTranslate}px, ${yTranslate}px) 
-                      skew(${xStretch}deg, ${yStretch}deg)
                       `,
                   }}
                 />

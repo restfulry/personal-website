@@ -1,14 +1,17 @@
+import { FaTemperatureLow } from "react-icons/fa";
+
 export const FilmTextHeader = {
   purpleBg: false,
+  whiteBg: true,
   primary: false,
   greenText: false,
   blackText: true,
   lightTextDesc: false,
   headline: "Z",
   headlineBg: "Film.",
-  subtitle: "Director & DP",
+  subtitle: "",
   description:
-    "I bridge the gap between real-world and digital experiences. I solve human problems and take ideas from 0 to 1.",
+    "",
 };
 
 export const PortfolioSectionData = {
@@ -18,4 +21,15 @@ export const PortfolioSectionData = {
   portfolioItem: "TokTik",
   portfolioItem2: "ScrambleWords",
   portfolioItem3: "Crater Cookies",
+};
+
+export const TextSectionData = {
+  purpleBg: false,
+  blueBg: false,
+  orangeBg: false,
+  whiteBg: true,
+  blackText: true,
+  paragraphHeadline: "director & dp",
+  subheading: "I bridge the gap between real-world and digital experiences.",
+  paragraph: "I'm motivated by the desire to solve real-life problems, bringing people together, and taking ideas from 0 to 1.",
 };

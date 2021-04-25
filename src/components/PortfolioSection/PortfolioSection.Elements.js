@@ -26,7 +26,8 @@ export const TextWrapper = styled.div`
 export const Heading = styled.h2`
   margin-top: 20px;
   margin-bottom: 3px;
-  font-size: 1vh;
+  font-size: 1.2vh;
+  letter-spacing: .1rem;
   text-transform: uppercase;
   border-bottom: 2px solid #f5efed;
   color: ${({ greenText }) => (greenText ? "#85FF9E" : "#ededf5")};
