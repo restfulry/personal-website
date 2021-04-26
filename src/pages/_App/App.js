@@ -15,6 +15,7 @@ import CodePage from "../CodePage/CodePage";
 import FilmPage from "../FilmPage/FilmPage";
 import ChocolatePage from "../ChocolatePage/ChocolatePage";
 import WhoPage from "../WhoPage/WhoPage";
+import ContactPage from "../ContactPage/ContactPage";
 
 const App = () => {
   const [mouseX, setMouseX] = useState(0);
@@ -128,6 +129,21 @@ const App = () => {
           path="/who"
           render={() => (
             <WhoPage
+              xStretch={xStretch}
+              yStretch={yStretch}
+              xAxisRotate={xAxisRotate}
+              yAxisRotate={yAxisRotate}
+              xTranslate={xTranslate}
+              yTranslate={yTranslate}
+              rotateAngle={rotateAngle}
+            />
+          )}
+        />
+        <Route
+          exact
+          path="/contact"
+          render={() => (
+            <ContactPage
               xStretch={xStretch}
               yStretch={yStretch}
               xAxisRotate={xAxisRotate}
