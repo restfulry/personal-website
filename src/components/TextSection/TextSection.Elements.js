@@ -21,6 +21,9 @@ export const TextWrapper = styled.div`
 
   text-align: center;
 
+  transform: translateX(${({ animate }) => (animate ? "0" : "-100vw")});
+  transition: transform 1s;
+
   @media screen and (max-width: 768px) {
     padding-bottom: 65px;
   }

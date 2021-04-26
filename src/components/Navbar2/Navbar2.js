@@ -1,23 +1,19 @@
 import React, { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
-import { Button } from "../../globalStyles";
 import {
   Nav2,
   NavbarContainer,
   NavLogo,
-  NavIcon,
   MobileHamburger,
   NavMenu,
   NavPrimary,
   NavItem,
   NavLinks,
   NavContact,
-  NavItemBtn,
-  NavBtnLink,
 } from "./Navbar2.elements";
 
-const Navbar2 = ({ blueBg, whiteBg, orangeBg }) => {
+const Navbar2 = ({ blueBg, whiteBg, orangeBg, ref1 }) => {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
 
@@ -39,7 +35,7 @@ const Navbar2 = ({ blueBg, whiteBg, orangeBg }) => {
   window.addEventListener("resize", showButton);
 
   return (
-    <>
+    <div ref={ref1}>
       <IconContext.Provider value={{ color: "#fff" }}>
         <Nav2 blueBg={blueBg} whiteBg={whiteBg} orangeBg={orangeBg}>
           <NavbarContainer>
@@ -84,7 +80,7 @@ const Navbar2 = ({ blueBg, whiteBg, orangeBg }) => {
           </NavbarContainer>
         </Nav2>
       </IconContext.Provider>
-    </>
+    </div>
   );
 };
 

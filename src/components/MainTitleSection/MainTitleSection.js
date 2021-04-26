@@ -13,6 +13,8 @@ import {
 } from "./MainTitleSection.Elements";
 
 const MainTitleSection = ({
+  ref2,
+  animate,
   purpleBg,
   blueBg,
   orangeBg,
@@ -36,7 +38,7 @@ const MainTitleSection = ({
   yTranslate,
 }) => {
   return (
-    <>
+    <div ref={ref2}>
       <InfoSec purpleBg={purpleBg} blueBg={blueBg} orangeBg={orangeBg} whiteBg={whiteBg}>
         <Container>
           <InfoRow>
@@ -91,7 +93,7 @@ const MainTitleSection = ({
           </InfoRow>
         </Container>
       </InfoSec>
-    </>
+    </div>
   );
 };
 

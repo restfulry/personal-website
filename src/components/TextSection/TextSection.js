@@ -11,6 +11,7 @@ import {
 } from "./TextSection.Elements";
 
 const TextSection = ({
+  animate,
   purpleBg,
   blueBg,
   orangeBg,
@@ -22,11 +23,11 @@ const TextSection = ({
   subheading,
 }) => {
   return (
-    <>
+    <div>
       <TextSec purpleBg={purpleBg} blueBg={blueBg} orangeBg={orangeBg} whiteBg={whiteBg}>
         <Container>
         <TextRow>
-          <TextWrapper>
+          <TextWrapper animate={animate}>
             <Heading greenText={greenText} blackText={blackText}>{paragraphHeadline}</Heading>
           </TextWrapper>
         </TextRow>
@@ -38,7 +39,7 @@ const TextSection = ({
         </TextRow>
         </Container>
       </TextSec>
-    </>
+    </div>
   );
 };
 

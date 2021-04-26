@@ -14,6 +14,7 @@ import {
 } from "./PortfolioSection.Elements";
 
 const PortfolioSection = ({
+  ref4,
   purpleBg,
   blueBg,
   greenText,
@@ -24,7 +25,7 @@ const PortfolioSection = ({
   portfolioItem3,
 }) => {
   return (
-    <>
+    <div ref={ref4}>
       <InfoSec purpleBg={purpleBg} blueBg={blueBg}>
         <Container>
           <InfoRow>
@@ -85,7 +86,7 @@ const PortfolioSection = ({
           </SkillsContainer>
         </Container>
       </InfoSec>
-    </>
+    </div>
   );
 };
 
