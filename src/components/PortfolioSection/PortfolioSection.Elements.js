@@ -31,6 +31,9 @@ export const Heading = styled.h2`
   text-transform: uppercase;
   border-bottom: 2px solid #f5efed;
   color: ${({ greenText }) => (greenText ? "#85FF9E" : "#ededf5")};
+
+  opacity: ${({animate}) => (animate ? "1.0" : "0")};
+  transition: opacity 3s ease-out;
 `;
 
 export const PortfolioItem = styled.h1`

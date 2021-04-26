@@ -27,14 +27,14 @@ const TextSection = ({
       <TextSec purpleBg={purpleBg} blueBg={blueBg} orangeBg={orangeBg} whiteBg={whiteBg}>
         <Container>
         <TextRow>
-          <TextWrapper animate={animate}>
-            <Heading greenText={greenText} blackText={blackText}>{paragraphHeadline}</Heading>
+          <TextWrapper>
+            <Heading greenText={greenText} blackText={blackText} animate={animate}>{paragraphHeadline}</Heading>
           </TextWrapper>
         </TextRow>
         <TextRow>
           <TextWrapper>    
-            <Subheading blackText={blackText}>{subheading}</Subheading>
-            <Paragraph blackText={blackText}>{paragraph}</Paragraph>
+            <Subheading blackText={blackText} animate={animate}>{subheading}</Subheading>
+            <Paragraph blackText={blackText} animate={animate}>{paragraph}</Paragraph>
           </TextWrapper>
         </TextRow>
         </Container>

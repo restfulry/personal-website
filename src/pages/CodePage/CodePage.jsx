@@ -51,7 +51,6 @@ const CodePage = ({
     }
    };
 
-
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
@@ -59,23 +58,27 @@ const CodePage = ({
 
   return (
     <>
-      <Navbar2 blueBg="true" ref1={ref1}/>
-      <MainTitleSection
-        {...CodeTextHeader}
-        xStretch={xStretch}
-        yStretch={yStretch}
-        xAxisRotate={xAxisRotate}
-        yAxisRotate={yAxisRotate}
-        xTranslate={xTranslate}
-        yTranslate={yTranslate}
-        animate={show.showMainTitleSection}
-        ref2={ref2}
-      />
+      <div ref={ref1}>
+        <Navbar2 blueBg="true" animate={show.showNavbar2}/>
+      </div>
+      <div ref={ref2}>
+        <MainTitleSection
+          {...CodeTextHeader}
+          xStretch={xStretch}
+          yStretch={yStretch}
+          xAxisRotate={xAxisRotate}
+          yAxisRotate={yAxisRotate}
+          xTranslate={xTranslate}
+          yTranslate={yTranslate}
+          animate={show.showMainTitleSection}
+        />
+      </div>
       <div ref={ref3}>
-
         <TextSection {...TextSectionData} animate={show.showTextSection} />
       </div>
-      <PortfolioSection {...PortfolioSectionData} ref4={ref4}/>
+      <div ref={ref4}>
+        <PortfolioSection {...PortfolioSectionData} animate={show.showPortfolioSection}/>
+      </div>
     </>
   );
 };

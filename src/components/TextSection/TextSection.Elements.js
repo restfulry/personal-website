@@ -21,9 +21,6 @@ export const TextWrapper = styled.div`
 
   text-align: center;
 
-  transform: translateX(${({ animate }) => (animate ? "0" : "-100vw")});
-  transition: transform 1s;
-
   @media screen and (max-width: 768px) {
     padding-bottom: 65px;
   }
@@ -44,6 +41,9 @@ export const Heading = styled.h2`
     : yellowText
     ? "#f4e044"
     : "#FFF"};
+
+  opacity: ${({animate}) => (animate ? "1.0" : "0")};
+  transition: opacity 3s ease-out;
 `;
 
 export const Subheading = styled.p`
@@ -58,6 +58,10 @@ export const Subheading = styled.p`
     : yellowText
     ? "#f4e044"
     : "#FFF"};
+
+  opacity: ${({animate}) => (animate ? "1" : "0")};
+  transform: translateY(${({ animate }) => (animate ? "0" : "-10vw")});
+  transition: opacity 1.6s, transform 1.4s ease-out;
 `;
 
 export const Paragraph = styled.p`
@@ -72,4 +76,8 @@ export const Paragraph = styled.p`
     : yellowText
     ? "#f4e044"
     : "#FFF"};
+
+  opacity: ${({animate}) => (animate ? "1.0" : "0")};
+  transform: translateY(${({ animate }) => (animate ? "0" : "10vw")});
+  transition: opacity 3s, transform 1.4s ease-out;
 `;
