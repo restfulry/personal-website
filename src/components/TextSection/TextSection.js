@@ -11,6 +11,7 @@ import {
 } from "./TextSection.Elements";
 
 const TextSection = ({
+  ref3,
   animate,
   purpleBg,
   blueBg,
@@ -27,7 +28,7 @@ const TextSection = ({
       <TextSec purpleBg={purpleBg} blueBg={blueBg} orangeBg={orangeBg} whiteBg={whiteBg}>
         <Container>
         <TextRow>
-          <TextWrapper>
+          <TextWrapper ref={ref3}>
             <Heading greenText={greenText} blackText={blackText} animate={animate}>{paragraphHeadline}</Heading>
           </TextWrapper>
         </TextRow>

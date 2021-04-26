@@ -28,6 +28,9 @@ export const TextWrapper = styled.div`
   perspective: 50px;
   perspective-origin: 50% 50%;
 
+  opacity: ${({animate}) => (animate ? "1.0" : "0")};
+  transition: opacity 2s;
+
   @media screen and (max-width: 768px) {
     padding-bottom: 65px;
   }
@@ -56,6 +59,8 @@ export const Heading = styled.h1`
   margin-bottom: 0px;
   font-size: 30vh;
   transition: all 2s ease-out;
+  perspective: 100px;
+  perspective-origin: ${({xStretch}) => xStretch ? xStretch : 50}% ${({yStretch}) => yStretch ? yStretch : 50}%;
   color: ${({ greenText, yellowText }) =>
     greenText ? "#85FF9E" : yellowText ? "#f4e044" : "#ededf5"};
 `;

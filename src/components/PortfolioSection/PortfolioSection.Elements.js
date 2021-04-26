@@ -23,6 +23,12 @@ export const TextWrapper = styled.div`
   }
 `;
 
+export const PortfolioWrapper = styled.div`
+opacity: ${({animate}) => (animate ? "1" : "0")};
+transform: translateY(${({ animate }) => (animate ? "0" : "10vw")});
+transition: opacity 1.6s, transform 1.4s ease-out;
+`
+
 export const Heading = styled.h2`
   margin-top: 20px;
   margin-bottom: 3px;

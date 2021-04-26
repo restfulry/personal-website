@@ -13,6 +13,7 @@ import {
 } from "./MainTitleSection.Elements";
 
 const MainTitleSection = ({
+  ref2,
   animate,
   purpleBg,
   blueBg,
@@ -41,7 +42,7 @@ const MainTitleSection = ({
       <InfoSec purpleBg={purpleBg} blueBg={blueBg} orangeBg={orangeBg} whiteBg={whiteBg}>
         <Container>
           <InfoRow>
-            <TextWrapper>
+            <TextWrapper ref={ref2} animate={animate}>
               <HeadingStatic
                 greenText={greenText}
                 blackText={blackText}
@@ -78,10 +79,9 @@ const MainTitleSection = ({
                 yTranslate={yTranslate}
                 style={{
                   transform: `
-                  rotateY(${yAxisRotate}deg) 
-                  translate(${xTranslate}px, ${yTranslate}px) 
-                  skew(${xStretch}deg, ${yStretch}deg)
-                  `,
+                    rotateY(${yAxisRotate}deg) 
+                    translate(${xTranslate}px, ${yTranslate}px) 
+                    `,
                 }}
               >
                 {headline}

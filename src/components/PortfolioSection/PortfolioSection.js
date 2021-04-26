@@ -5,6 +5,7 @@ import {
   InfoSec,
   InfoRow,
   TextWrapper,
+  PortfolioWrapper,
   Heading,
   PortfolioItem,
   SkillsContainer,
@@ -14,7 +15,10 @@ import {
 } from "./PortfolioSection.Elements";
 
 const PortfolioSection = ({
+  ref4,
+  ref5,
   animate,
+  animate5,
   purpleBg,
   blueBg,
   greenText,
@@ -30,30 +34,32 @@ const PortfolioSection = ({
         <Container>
           <InfoRow>
             <TextWrapper>
-              <Heading greenText={greenText} animate={animate}>{headline}</Heading>
+              <Heading greenText={greenText} animate={animate} ref={ref4}>{headline}</Heading>
             </TextWrapper>
           </InfoRow>
-          <InfoRow>
-            <TextWrapper>
-              <Link to="/info">
-                <PortfolioItem>{portfolioItem}</PortfolioItem>
-              </Link>
-            </TextWrapper>
-          </InfoRow>
-          <InfoRow>
-            <TextWrapper>
-              <Link to="/info">
-                <PortfolioItem>{portfolioItem2}</PortfolioItem>
-              </Link>
-            </TextWrapper>
-          </InfoRow>
-          <InfoRow>
-            <TextWrapper>
-              <Link to="/info">
-                <PortfolioItem>{portfolioItem3}</PortfolioItem>
-              </Link>
-            </TextWrapper>
-          </InfoRow>
+          <PortfolioWrapper ref={ref5} animate={animate5}>
+            <InfoRow>
+              <TextWrapper>
+                <Link to="/info">
+                  <PortfolioItem>{portfolioItem}</PortfolioItem>
+                </Link>
+              </TextWrapper>
+            </InfoRow>
+            <InfoRow>
+              <TextWrapper>
+                <Link to="/info">
+                  <PortfolioItem>{portfolioItem2}</PortfolioItem>
+                </Link>
+              </TextWrapper>
+            </InfoRow>
+            <InfoRow>
+              <TextWrapper>
+                <Link to="/info">
+                  <PortfolioItem>{portfolioItem3}</PortfolioItem>
+                </Link>
+              </TextWrapper>
+            </InfoRow>
+          </PortfolioWrapper>
         </Container>
         <Container>
           <InfoRow>
