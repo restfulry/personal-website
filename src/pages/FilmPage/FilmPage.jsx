@@ -1,17 +1,14 @@
 import React, { useLayoutEffect, useEffect, useState, useRef } from "react";
-import {
-  MainTitleSection,
-  TextSection,
-} from "../../components";
-import { ChocoTextHeader, TextSectionData } from "./Data";
-import { Navbar2 } from "../../components";
+import ReactPlayer from "react-player";
+import styles from "./FilmPage.css";
+import { Navbar2, MainTitleSection, TextSection } from "../../components";
+import { FilmTextHeader, TextSectionData } from "./Data";
 
-const ChocolatePage = ({
+const FilmPage = ({
   xStretch,
   yStretch,
   xAxisRotate,
   yAxisRotate,
-  rotateAngle,
   xTranslate,
   yTranslate,
 }) => {
@@ -57,9 +54,9 @@ const ChocolatePage = ({
 
   return (
     <>
-      <Navbar2 orangeBg="true" animate={show.showRef1} ref1={ref1}/>
+      <Navbar2 whiteBg="true" animate={show.showRef1} ref1={ref1}/>
       <MainTitleSection
-        {...ChocoTextHeader}
+        {...FilmTextHeader}
         animate={show.showRef2}
         ref2={ref2}
         xStretch={xStretch}
@@ -68,11 +65,19 @@ const ChocolatePage = ({
         yAxisRotate={yAxisRotate}
         xTranslate={xTranslate}
         yTranslate={yTranslate}
-        rotateAngle={rotateAngle}
       />
       <TextSection {...TextSectionData} animate={show.showRef3} ref3={ref3}/>
+      <div className="player-wrapper">
+        <ReactPlayer
+          className="react-player"
+          url="https://vimeo.com/aliacreative/aliademo2018"
+          width="100%"
+          height="100%"
+          controls="true"
+        />
+      </div>
     </>
   );
 };
 
-export default ChocolatePage;
+export default FilmPage;
