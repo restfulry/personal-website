@@ -1,6 +1,7 @@
 import React, { useLayoutEffect, useEffect, useState, useRef } from "react";
 import ReactPlayer from "react-player";
 import styles from "./FilmPage.css";
+import { Button } from "../../globalStyles";
 import { Navbar2, MainTitleSection, TextSection } from "../../components";
 import { FilmTextHeader, TextSectionData } from "./Data";
 
@@ -18,6 +19,8 @@ const FilmPage = ({
     showRef2: false, 
     showRef3: false, 
   });
+
+  const [vimeoUrl, setVimeoUrl] = useState("https:/vimeo.com/aliacreative/aliademo2018");
 
   const ref1 = useRef(null),
         ref2 = useRef(null),
@@ -50,7 +53,13 @@ const FilmPage = ({
 
   useEffect(() => {
     doShow(state => ({...state, showRef2: true}));
-  }, [])
+  }, []);
+
+  const handleClick = (input) => {
+    if (input === "vid1") {
+      setVimeoUrl("https://vimeo.com/273438866");
+    };
+  };
 
   return (
     <>
@@ -67,14 +76,35 @@ const FilmPage = ({
         yTranslate={yTranslate}
       />
       <TextSection {...TextSectionData} animate={show.showRef3} ref3={ref3}/>
-      <div className="player-wrapper">
-        <ReactPlayer
-          className="react-player"
-          url="https://vimeo.com/aliacreative/aliademo2018"
-          width="100%"
-          height="100%"
-          controls="true"
-        />
+      <Button>1</Button> <Button onClick={handleClick} >2</Button> <Button>3</Button> <Button>4</Button>
+      <div className="video-section">
+        <div className="player-wrapper">
+          <ReactPlayer
+            className="react-player"
+            url={vimeoUrl}
+            width="100%"
+            height="100%"
+            controls="true"
+          />
+        </div>
+        <div className="player-wrapper">
+          <ReactPlayer
+            className="react-player"
+            url="https://vimeo.com/273438866"
+            width="100%"
+            height="100%"
+            controls="true"
+          />
+        </div>
+        <div className="player-wrapper">
+          <ReactPlayer
+            className="react-player"
+            url="https://vimeo.com/346423179"
+            width="100%"
+            height="100%"
+            controls="true"
+          />
+        </div>
       </div>
     </>
   );
