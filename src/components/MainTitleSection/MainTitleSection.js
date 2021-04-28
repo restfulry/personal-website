@@ -30,6 +30,7 @@ const MainTitleSection = ({
   yStretch,
   xAxisRotate,
   yAxisRotate,
+  rotateAngle,
   xTranslate,
   yTranslate,
 }) => {
@@ -57,12 +58,12 @@ const MainTitleSection = ({
                   xTranslate={xTranslate}
                   yTranslate={yTranslate}
                   style={{
-                    transform: `rotate3d(
-                  ${xAxisRotate},
-                   ${yAxisRotate},
-                  0,
-                  0.5rad
-                ) translate(${xTranslate}px, ${yTranslate}px) skew(${xStretch}deg, ${yStretch}deg)`,
+                    transform: `
+                      rotateY(${yAxisRotate}deg) 
+                      translate(${xTranslate}px, ${yTranslate}px) 
+                      skew(${xStretch}deg, ${yStretch}deg)
+                      perspective(1000px)
+                      `,
                   }}
                 />
               </ImgWrapper>
@@ -74,12 +75,15 @@ const MainTitleSection = ({
                 xTranslate={xTranslate}
                 yTranslate={yTranslate}
                 style={{
-                  transform: `rotate3d(
+                  transform: `
+                  rotate3d(
                   ${xAxisRotate},
                    ${yAxisRotate},
                   0,
                   0.5rad
-                ) translate(${xTranslate}px, ${yTranslate}px) skew(${xStretch}deg, ${yStretch}deg)`,
+                ) 
+                translate(${xTranslate}px, ${yTranslate}px) 
+                skew(${xStretch}deg, ${yStretch}deg)`,
                 }}
               >
                 {headline}

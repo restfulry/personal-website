@@ -7,7 +7,7 @@ export const ChocoTextHeader = {
   blackText: false,
   yellowText: true,
   lightTextDesc: false,
-  img: require("../../images/ChadChef.svg").default,
+  img: require("../../images/ChadEat_Shadow.svg").default,
   headline: "",
   headlineBg: "Chocolate.",
   subtitle: "",
