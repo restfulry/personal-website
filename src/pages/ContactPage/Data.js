@@ -9,7 +9,7 @@ export const ChocoTextHeader = {
   lightTextDesc: false,
   img: require("../../images/ChadEat_Shadow.svg").default,
   headline: "",
-  headlineBg: "Chocolate.",
+  headlineBg: "Who?",
   subtitle: "",
   description: "",
 };
@@ -28,7 +28,7 @@ export const TextSectionData = {
   purpleBg: false,
   blueBg: false,
   orangeBg: true,
-  paragraphHeadline: "Chocolate maker",
-  subheading: "There had to be a real, better tasting chocolate.",
+  paragraphHeadline: "Contact me",
+  subheading: "restfulry@pm.me",
   paragraph: "I’ve been a chocolate fiend from the start. Apparently, chocolate was a hard word for me. I would barrel down my aunt’s hallways yelling, “I want chachalate!”. I pronounced it as CHA-CHA-LIT in the high-pitched voice of a hungry little Ryan.",
 };

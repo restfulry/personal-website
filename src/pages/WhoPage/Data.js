@@ -9,7 +9,7 @@ export const ChocoTextHeader = {
   lightTextDesc: false,
   img: require("../../images/ChadEat_Shadow.svg").default,
   headline: "",
-  headlineBg: "Chocolate.",
+  headlineBg: "Who?",
   subtitle: "",
   description: "",
 };

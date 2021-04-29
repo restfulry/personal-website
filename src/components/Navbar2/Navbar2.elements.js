@@ -27,24 +27,10 @@ export const Nav2 = styled.nav`
 export const NavbarContainer = styled(Container)`
   display: flex;
   justify-content: space-between;
-  height: 80px;
+  align-items: center;
+  height: 50px;
 
   ${Container}
-`;
-
-export const NavLogo = styled(Link)`
-  color: ${({ whiteBg }) => (whiteBg ? "#080808" : "#fffafa")};
-  font-weight: bold;
-  justify-self: flex-start;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 2rem;
-  display: flex;
-  align-items: center;
-`;
-
-export const NavIcon = styled(FaMagento)`
-  margin-righ: 0.5rem;
 `;
 
 export const MobileHamburger = styled.div`
@@ -61,11 +47,31 @@ export const MobileHamburger = styled.div`
   }
 `;
 
-export const NavMenu = styled.ul`
+export const NavLogo = styled(Link)`
+  color: ${({ whiteBg }) => (whiteBg ? "#080808" : "#fffafa")};
+  font-weight: bold;
+  justify-self: flex-start;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  display: flex;
+`;
+
+export const NavIcon = styled(FaMagento)`
+  margin-right: 0.5rem;
+`;
+
+export const NavContact = styled.div`
   display: flex;
   align-items: center;
   list-style: none;
   text-align: center;
+`;
+
+export const NavMenu = styled.ul`
+  display: flex;
+  justify-content: space-around;
+
 
   @media screen and (max-width: 960px) {
     display: flex;
@@ -81,12 +87,20 @@ export const NavMenu = styled.ul`
   }
 `;
 
+export const NavPrimary = styled.div`
+  align-self: center;
+  display: flex;
+  list-style: none;
+  text-align: center;
+`
+
 export const NavItem = styled.li`
   height: 50px;
   border-bottom: 2px solid transparent;
 
   &:hover {
     border-bottom: 2px solid #4b59f7;
+    transition: all 0.9s ease;
   }
 
   @media screen and (max-width: 960px) {

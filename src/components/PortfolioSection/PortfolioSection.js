@@ -5,6 +5,7 @@ import {
   InfoSec,
   InfoRow,
   TextWrapper,
+  PortfolioWrapper,
   Heading,
   PortfolioItem,
   SkillsContainer,
@@ -14,6 +15,10 @@ import {
 } from "./PortfolioSection.Elements";
 
 const PortfolioSection = ({
+  ref4,
+  ref5,
+  animate,
+  animate5,
   purpleBg,
   blueBg,
   greenText,
@@ -24,40 +29,42 @@ const PortfolioSection = ({
   portfolioItem3,
 }) => {
   return (
-    <>
+    <div>
       <InfoSec purpleBg={purpleBg} blueBg={blueBg}>
         <Container>
           <InfoRow>
             <TextWrapper>
-              <Heading greenText={greenText}>{headline}</Heading>
+              <Heading greenText={greenText} animate={animate} ref={ref4}>{headline}</Heading>
             </TextWrapper>
           </InfoRow>
-          <InfoRow>
-            <TextWrapper>
-              <Link to="/info">
-                <PortfolioItem>{portfolioItem}</PortfolioItem>
-              </Link>
-            </TextWrapper>
-          </InfoRow>
-          <InfoRow>
-            <TextWrapper>
-              <Link to="/info">
-                <PortfolioItem>{portfolioItem2}</PortfolioItem>
-              </Link>
-            </TextWrapper>
-          </InfoRow>
-          <InfoRow>
-            <TextWrapper>
-              <Link to="/info">
-                <PortfolioItem>{portfolioItem3}</PortfolioItem>
-              </Link>
-            </TextWrapper>
-          </InfoRow>
+          <PortfolioWrapper ref={ref5} animate={animate5}>
+            <InfoRow>
+              <TextWrapper>
+                <Link to="/info">
+                  <PortfolioItem>{portfolioItem}</PortfolioItem>
+                </Link>
+              </TextWrapper>
+            </InfoRow>
+            <InfoRow>
+              <TextWrapper>
+                <Link to="/info">
+                  <PortfolioItem>{portfolioItem2}</PortfolioItem>
+                </Link>
+              </TextWrapper>
+            </InfoRow>
+            <InfoRow>
+              <TextWrapper>
+                <Link to="/info">
+                  <PortfolioItem>{portfolioItem3}</PortfolioItem>
+                </Link>
+              </TextWrapper>
+            </InfoRow>
+          </PortfolioWrapper>
         </Container>
         <Container>
           <InfoRow>
             <TextWrapper>
-              <Heading greenText={greenText}>{headlineSkills}</Heading>
+              <Heading animate={animate} greenText={greenText}>{headlineSkills}</Heading>
             </TextWrapper>
           </InfoRow>
           <SkillsContainer>
@@ -85,7 +92,7 @@ const PortfolioSection = ({
           </SkillsContainer>
         </Container>
       </InfoSec>
-    </>
+    </div>
   );
 };
 

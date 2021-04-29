@@ -63,7 +63,7 @@ export const SocialIcons = styled.div`
   justify-content: space-around;
   align-items: flex-end;
   padding-right: 3vw;
-  width: 200px;
+  width: 250px;
 `;
 
 export const SocialIconLink = styled.a`

@@ -13,9 +13,12 @@ import {
 } from "./MainTitleSection.Elements";
 
 const MainTitleSection = ({
+  ref2,
+  animate,
   purpleBg,
   blueBg,
   orangeBg,
+  whiteBg,
   greenText,
   blackText,
   yellowText,
@@ -35,11 +38,16 @@ const MainTitleSection = ({
   yTranslate,
 }) => {
   return (
-    <>
-      <InfoSec purpleBg={purpleBg} blueBg={blueBg} orangeBg={orangeBg}>
+    <div>
+      <InfoSec
+        purpleBg={purpleBg}
+        blueBg={blueBg}
+        orangeBg={orangeBg}
+        whiteBg={whiteBg}
+      >
         <Container>
           <InfoRow>
-            <TextWrapper>
+            <TextWrapper ref={ref2} animate={animate}>
               <HeadingStatic
                 greenText={greenText}
                 blackText={blackText}
@@ -47,7 +55,7 @@ const MainTitleSection = ({
               >
                 {headlineBg}
               </HeadingStatic>
-              <ImgWrapper>
+              <ImgWrapper xStretch={xStretch} yStretch={yStretch}>
                 <Img
                   src={img}
                   alt={alt}
@@ -61,8 +69,6 @@ const MainTitleSection = ({
                     transform: `
                       rotateY(${yAxisRotate}deg) 
                       translate(${xTranslate}px, ${yTranslate}px) 
-                      skew(${xStretch}deg, ${yStretch}deg)
-                      perspective(1000px)
                       `,
                   }}
                 />
@@ -76,14 +82,9 @@ const MainTitleSection = ({
                 yTranslate={yTranslate}
                 style={{
                   transform: `
-                  rotate3d(
-                  ${xAxisRotate},
-                   ${yAxisRotate},
-                  0,
-                  0.5rad
-                ) 
-                translate(${xTranslate}px, ${yTranslate}px) 
-                skew(${xStretch}deg, ${yStretch}deg)`,
+                    rotateY(${yAxisRotate}deg) 
+                    translate(${xTranslate}px, ${yTranslate}px) 
+                    `,
                 }}
               >
                 {headline}
@@ -94,7 +95,7 @@ const MainTitleSection = ({
           </InfoRow>
         </Container>
       </InfoSec>
-    </>
+    </div>
   );
 };
 

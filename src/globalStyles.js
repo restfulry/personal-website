@@ -1,15 +1,19 @@
 import styled, { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
+html {
+  scroll-behavior: smooth;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', 'Lato', sans-serif;
 }
 
 p, h2, h3, h4, h5 {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Poppins', 'Lato', sans-serif;
 }
 
 `;

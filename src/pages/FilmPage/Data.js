@@ -1,21 +1,26 @@
+import { FaTemperatureLow } from "react-icons/fa";
+
 export const FilmTextHeader = {
   purpleBg: false,
+  whiteBg: true,
   primary: false,
   greenText: false,
   blackText: true,
   lightTextDesc: false,
   headline: "Z",
   headlineBg: "Film.",
-  subtitle: "Director & DP",
+  subtitle: "",
   description:
-    "I bridge the gap between real-world and digital experiences. I solve human problems and take ideas from 0 to 1.",
+    "",
 };
 
-export const PortfolioSectionData = {
+export const TextSectionData = {
   purpleBg: false,
-  headline: "SELECT PROJECTS",
-  headlineSkills: "skills",
-  portfolioItem: "TokTik",
-  portfolioItem2: "ScrambleWords",
-  portfolioItem3: "Crater Cookies",
+  blueBg: false,
+  orangeBg: false,
+  whiteBg: true,
+  blackText: true,
+  paragraphHeadline: "director & dp",
+  subheading: "I bridge the gap between real-world and digital experiences.",
+  paragraph: "I've directed, filmed, and edited for brands such as Discovery Channel, Destination Ontario, One&Only, Jack.org, and CAA. I focus on human connection and emotion. A mission to bring us closer together in the digitally-connected world.",
 };

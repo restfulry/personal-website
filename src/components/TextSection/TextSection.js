@@ -1,36 +1,45 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { Container } from "../../globalStyles";
 import {
   TextSec,
   TextWrapper,
   Heading,
   Paragraph,
-  PortfolioItem,
-  SkillsContainer,
-  SkillsWrapper,
-  SkillsItems,
-  SkillItem,
+  Subheading,
+  TextRow,
 } from "./TextSection.Elements";
 
 const TextSection = ({
+  ref3,
+  animate,
   purpleBg,
   blueBg,
+  orangeBg,
+  whiteBg,
   greenText,
+  blackText,
   paragraphHeadline,
   paragraph,
+  subheading,
 }) => {
   return (
-    <>
-      <TextSec purpleBg={purpleBg} blueBg={blueBg}>
+    <div>
+      <TextSec purpleBg={purpleBg} blueBg={blueBg} orangeBg={orangeBg} whiteBg={whiteBg}>
         <Container>
-          <TextWrapper>
-            <Heading greenText={greenText}>{paragraphHeadline}</Heading>
-            <Paragraph>{paragraph}</Paragraph>
+        <TextRow>
+          <TextWrapper ref={ref3}>
+            <Heading greenText={greenText} blackText={blackText} animate={animate}>{paragraphHeadline}</Heading>
           </TextWrapper>
+        </TextRow>
+        <TextRow>
+          <TextWrapper>    
+            <Subheading blackText={blackText} animate={animate}>{subheading}</Subheading>
+            <Paragraph blackText={blackText} animate={animate}>{paragraph}</Paragraph>
+          </TextWrapper>
+        </TextRow>
         </Container>
       </TextSec>
-    </>
+    </div>
   );
 };
 

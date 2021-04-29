@@ -23,13 +23,23 @@ export const TextWrapper = styled.div`
   }
 `;
 
+export const PortfolioWrapper = styled.div`
+opacity: ${({animate}) => (animate ? "1" : "0")};
+transform: translateY(${({ animate }) => (animate ? "0" : "10vw")});
+transition: opacity 1.6s, transform 1.4s ease-out;
+`
+
 export const Heading = styled.h2`
   margin-top: 20px;
   margin-bottom: 3px;
-  font-size: 1vh;
+  font-size: 1.2vh;
+  letter-spacing: .1rem;
   text-transform: uppercase;
   border-bottom: 2px solid #f5efed;
   color: ${({ greenText }) => (greenText ? "#85FF9E" : "#ededf5")};
+
+  opacity: ${({animate}) => (animate ? "1.0" : "0")};
+  transition: opacity 3s ease-out;
 `;
 
 export const PortfolioItem = styled.h1`
