@@ -5,7 +5,7 @@ import {
   PortfolioSectionData,
   TextSectionData,
 } from "./Data";
-import { Navbar2 } from "../../components";
+import { NavBar2 } from "../../components";
 
 import "./CodePage.css";
 
@@ -73,7 +73,7 @@ const CodePage = ({
 
   return (
     <>
-      <Navbar2 blueBg="true" animate={show.showRef1} ref1={ref1}/>
+      <NavBar2 blueBg="true" animate={show.showRef1} ref1={ref1}/>
       <MainTitleSection
         {...CodeTextHeader}
         animate={show.showRef2}

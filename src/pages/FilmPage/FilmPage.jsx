@@ -2,7 +2,7 @@ import React, { useLayoutEffect, useEffect, useState, useRef } from "react";
 import ReactPlayer from "react-player";
 import styles from "./FilmPage.css";
 import { Button } from "../../globalStyles";
-import { Navbar2, MainTitleSection, TextSection } from "../../components";
+import { NavBar2, MainTitleSection, TextSection } from "../../components";
 import { FilmTextHeader, TextSectionData } from "./Data";
 
 const FilmPage = ({
@@ -63,7 +63,7 @@ const FilmPage = ({
 
   return (
     <>
-      <Navbar2 whiteBg="true" animate={show.showRef1} ref1={ref1}/>
+      <NavBar2 whiteBg="true" animate={show.showRef1} ref1={ref1}/>
       <MainTitleSection
         {...FilmTextHeader}
         animate={show.showRef2}

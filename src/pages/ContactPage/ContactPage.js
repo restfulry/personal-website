@@ -4,7 +4,7 @@ import {
   TextSection,
 } from "../../components";
 import { ChocoTextHeader, TextSectionData } from "./Data";
-import { Navbar2 } from "../../components";
+import { NavBar2 } from "../../components";
 
 const ChocolatePage = ({
   xStretch,
@@ -17,7 +17,7 @@ const ChocolatePage = ({
 }) => {
   return (
     <>
-      <Navbar2 orangeBg="true" />
+      <NavBar2 orangeBg="true" />
       <TextSection {...TextSectionData} />
     </>
   );

@@ -4,7 +4,7 @@ import {
   TextSection,
 } from "../../components";
 import { ChocoTextHeader, TextSectionData } from "./Data";
-import { Navbar2 } from "../../components";
+import { NavBar2 } from "../../components";
 
 const ChocolatePage = ({
   xStretch,
@@ -57,7 +57,7 @@ const ChocolatePage = ({
 
   return (
     <>
-      <Navbar2 orangeBg="true" animate={show.showRef1} ref1={ref1}/>
+      <NavBar2 orangeBg="true" animate={show.showRef1} ref1={ref1}/>
       <MainTitleSection
         {...ChocoTextHeader}
         animate={show.showRef2}
