@@ -1,5 +1,5 @@
 import React from "react";
-import { NavBar2, HeroSection } from "../../components";
+import { NavBarTwo, HeroSection } from "../../components";
 import { homeHeroOne, homeHeroTwo, homeHeroThree } from './Data';
 
 import "./HomePage.css"
@@ -7,7 +7,7 @@ import "./HomePage.css"
 const homePage = () => {
   return (
     <div>
-      <NavBar2 />
+      <NavBarTwo />
       <HeroSection {...homeHeroOne}/>
       <HeroSection {...homeHeroTwo}/>
       <HeroSection {...homeHeroThree}/>

@@ -11,9 +11,9 @@ import {
   NavItem,
   NavLinks,
   NavContact,
-} from "./NavBar2.elements";
+} from "./NavBarTwo.elements";
 
-const NavBar2 = ({ blueBg, whiteBg, orangeBg, ref1 }) => {
+const NavBarTwo = ({ blueBg, whiteBg, orangeBg, ref1 }) => {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
 
@@ -84,4 +84,4 @@ const NavBar2 = ({ blueBg, whiteBg, orangeBg, ref1 }) => {
   );
 };
 
-export default NavBar2;
+export default NavBarTwo;
